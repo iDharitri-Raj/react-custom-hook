@@ -1,11 +1,9 @@
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   max-width: 90vw;
-  height: 90vh;
   margin: 0 auto;
-  overflow-y: auto;
   justify-content: center;
   align-content: flex-start;
   padding: 24px 0;
