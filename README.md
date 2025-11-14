@@ -1,16 +1,65 @@
-# React + Vite
+# React Custom Hook – `useFetch`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to build a **custom React hook** that simplifies API data fetching. The hook, named **`useFetch`**, abstracts repetitive fetch logic and provides a clean interface for managing loading states, error states, and fetched data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Project Overview
 
-## React Compiler
+The goal of this assignment is to create a reusable custom hook that makes API calls easier and more efficient across React components. By using this hook, you avoid writing fetch logic repeatedly.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project includes:
 
-## Expanding the ESLint configuration
+- A custom hook: **`useFetch`**
+- A sample component demonstrating how to use the hook
+- Proper handling of **loading**, **error**, and **data** states
+- Simple UI for displaying fetched data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Features
+
+### ✔ Custom Hook: `useFetch`
+- Accepts a **URL** as a parameter.
+- Fetches data using JavaScript's native **fetch()**.
+- Utilizes `useState`, `useEffect`, and `useCallback`.
+- Returns:
+  - `data` – The fetched data
+  - `loading` – Loading state
+  - `error` – Error message or object (if any)
+
+### ✔ Demo Component
+A simple component that:
+- Shows a loading message/spinner
+- Displays errors if the fetch fails
+- Renders the data once loaded
+
+### ✔ API Used
+Dummy API endpoint for product data:
+https://api.escuelajs.co/api/v1/products
+
+---
+
+## 🛠️ Tech Stack
+
+- React (useState, useEffect, useCallback)
+- JavaScript Fetch API
+- CSS (basic styling)
+
+---
+
+## ▶️ Live Demo
+
+**Deployed Link:**  
+_https://usefetchweb.netlify.app/_
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+git clone https://github.com/iDharitri-Raj/react-custom-hook
+cd react-custom-hook
+npm install
+npm start
+```
